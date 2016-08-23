@@ -355,7 +355,7 @@ th {
   padding: 0; }
 
 button.blueStrong {
-  margin-top: 18px;
+  margin-top: 24px;
   background: #304596;
   font-size: 11px;
   letter-spacing: 1px;
@@ -369,8 +369,37 @@ button.blueStrong {
   transition: background .3s ease; }
   button.blueStrong strong {
     font-weight: 600;
-    text-align: center; }
+    text-align: center;
+    display: none; }
+  button.blueStrong i {
+    font-size: 16px;
+    vertical-align: middle;
+    margin-left: 5px; }
   button.blueStrong:hover {
+    background: #df7447; }
+
+button.blueLight {
+  margin-top: 24px;
+  background: #5d70a8;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: white;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 100;
+  width: 106px;
+  height: 30px;
+  border-radius: 7px;
+  border: 0;
+  transition: background .3s ease; }
+  button.blueLight strong {
+    font-weight: 600;
+    text-align: center;
+    display: none; }
+  button.blueLight i {
+    font-size: 16px;
+    vertical-align: middle;
+    margin-left: 5px; }
+  button.blueLight:hover {
     background: #df7447; }
 
 nav ul li.active {
@@ -607,7 +636,7 @@ nav {
   box-shadow: none;
   padding: 18px;
   position: relative;
-  z-index: 2; }
+  z-index: 999; }
   nav .nav-wrapper > a:nth-child(1) {
     width: 127px;
     display: inline-block;
@@ -631,24 +660,84 @@ nav {
     height: 507px; }
     .slider .slides li:nth-child(1) img {
       background-position: 14%; }
-    .slider .slides li:nth-child(1) .caption {
+    .slider .slides li:nth-child(2) img {
+      background-position: 75%; }
+    .slider .slides li .caption {
       top: initial;
-      bottom: 54px;
+      bottom: 69px;
       color: white; }
-      .slider .slides li:nth-child(1) .caption h3 {
+      .slider .slides li .caption h3 {
         font-weight: 100;
-        font-size: 22px;
+        font-size: 20px;
+        letter-spacing: -1px;
         line-height: 24px;
         font-family: 'gotham_lightregular';
         text-shadow: 0px 0px 2px #969696; }
-        .slider .slides li:nth-child(1) .caption h3 strong {
+        .slider .slides li .caption h3 strong {
           font-family: 'gotham_mediumregular'; }
-      .slider .slides li:nth-child(1) .caption h5 {
+      .slider .slides li .caption h5 {
         font-family: "Roboto", sans-serif;
         font-size: 22px;
         font-weight: 300;
         line-height: 24px;
         margin-top: 5px;
         display: none; }
+  .slider .indicators {
+    z-index: 2;
+    bottom: 18px; }
+    .slider .indicators li.indicator-item {
+      margin: 0 7px; }
+    .slider .indicators li.indicator-item.active {
+      background: #304596; }
+
+main {
+  padding: 18px;
+  background: #eef0f6; }
+  main .mainor, main .main {
+    width: 100%;
+    margin-bottom: 18px; }
+    main .mainor figure, main .main figure {
+      width: 100%;
+      height: 200px;
+      background: url(assets/images/otorrino.jpg);
+      padding: 0;
+      margin: 0;
+      -webkit-background-size: cover !important;
+      -moz-background-size: cover !important;
+      -o-background-size: cover !important;
+      background-size: cover !important; }
+    main .mainor article, main .main article {
+      width: 100%;
+      height: 223px;
+      text-align: left;
+      padding: 24px; }
+      main .mainor article h2, main .main article h2 {
+        color: rgba(255, 255, 255, 0.7);
+        font-family: "gotham_lightregular";
+        font-size: 17px;
+        margin-bottom: 18px; }
+        main .mainor article h2 strong, main .main article h2 strong {
+          font-family: "gotham_mediumregular";
+          display: block; }
+      main .mainor article .textMobile, main .main article .textMobile {
+        font-family: "Roboto", sans-serif;
+        font-weight: 200;
+        font-size: 13px;
+        color: white; }
+      main .mainor article .textDesktop, main .main article .textDesktop {
+        display: none; }
+  main .mainor article {
+    background: #304596; }
+  main .main article {
+    background: #df7447; }
+  main .blog {
+    background: white;
+    padding: 45px 18px 18px;
+    height: 400px;
+    width: 100%; }
+    main .blog h3 {
+      font-size: 24px;
+      color: #333;
+      font-family: "gotham_mediumregular"; }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,7 +4,7 @@ nav{
 	box-shadow: none;
 	padding: 18px;
 	position: relative;
-	z-index: 2;
+	z-index: 999;
 	.nav-wrapper{
 		>a:nth-child(1){
 			 width: 127px;

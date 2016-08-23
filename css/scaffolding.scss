@@ -9,7 +9,7 @@
 
 
 button.blueStrong{
-  margin-top: 18px;
+  margin-top: 24px;
   background: $blueStrong;
   font-size: 11px;
   letter-spacing: 1px;
@@ -24,11 +24,49 @@ button.blueStrong{
   strong{
    font-weight: 600;
    text-align: center;
+   display: none;
+
+  }
+  i{
+    font-size: 16px;
+    vertical-align: middle;
+    margin-left: 5px;
   }
   &:hover{ 
     background: $orange02;
   }
 }
+
+
+button.blueLight{
+  margin-top: 24px;
+  background: $blueLight;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: white;
+  font-family: $pt;
+  font-weight: 100;
+  width: 106px;
+  height:30px;
+  border-radius: 7px;
+  border: 0;
+  transition: background .3s ease;
+  strong{
+   font-weight: 600;
+   text-align: center;
+   display: none;
+  }
+  i{
+    font-size: 16px;
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+  &:hover{ 
+    background: $orange02;
+  }
+}
+
+
 
 nav ul li.active {
   background-color: rgba(0, 0, 0, 0.0); 
